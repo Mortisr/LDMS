@@ -12,8 +12,8 @@ To run the code one needs to invoke the following pl/sql function :
 
 ldms_pkg.new_loan_request with the following XML as an input parameter. The output is either any validation errors or  SUCCESS if the code is executed successfully and corresponding records are created in the following tables :
 
-XML input format
-----------------
+XML input format for new_loan_request
+-------------------------------------
 <ROOT>
 <CustomerName>Sridhar</CustomerName>
 <CustomerDateOfBirth>19-SEP-1970</CustomerDateOfBirth>
@@ -21,8 +21,17 @@ XML input format
 <ProductName>Fixed Rate Product</ProductName>
 <InterestRate>6.5</InterestRate>
 <OpeningBalance>1000</OpeningBalance>
-<CurrentBalance>1000</CurrentBalance>
-<PaymentAmount>10</PaymentAmount>
+</ROOT>
+
+XML input format for pay_amount
+-------------------------------
+<ROOT>
+<LoanId>1</LoanId>
+<PaymentAmount>100</PaymentAmount>
 <InstalmentPaymentDate>16-May-2024</InstalmentPaymentDate>
 </ROOT>
 
+Tables being populated :
+ldms_customers
+ldms_loan_product_types
+ldms_loans

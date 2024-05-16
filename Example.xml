@@ -5,7 +5,4 @@
 <ProductName>Fixed Rate Product</ProductName>
 <InterestRate>6.5</InterestRate>
 <OpeningBalance>1000</OpeningBalance>
-<CurrentBalance>1000</CurrentBalance>
-<PaymentAmount>10</PaymentAmount>
-<InstalmentPaymentDate>16-May-2024</InstalmentPaymentDate>
 </ROOT>
